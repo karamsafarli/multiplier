@@ -1,0 +1,26 @@
+@mixin Flexible(
+  $justify: null,
+  $align: null,
+  $flexdir: null,
+  $gap: null,
+  $wrap: null
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $flexdir;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+@mixin Font($size: null, $color: null, $weight: null) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+
+@mixin Image($w: null, $h: null, $obj-fit: null) {
+  width: $w;
+  height: $h;
+  object-fit: $obj-fit;
+}

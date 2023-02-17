@@ -1,0 +1,227 @@
+#login {
+    .row {
+      padding: 0 !important;
+  
+      .col-lg-6 {
+        padding: 0 !important;
+      }
+  
+      .col-md-5 {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  
+    .left {
+      height: 100vh;
+      background-color: #001c63;
+      background-size: cover;
+      padding: 35px 150px 35px 30px;
+      @media (max-width: 991px) {
+        padding: 35px 50px 35px 30px;
+      }
+  
+      @include Flexible($justify: space-between, $flexdir: column);
+  
+      .left-bottom {
+        h3 {
+          font-size: 25px;
+          color: white;
+          font-weight: 600;
+          @media (max-width: 991px) {
+            font-size: 21px;
+          }
+        }
+  
+        p {
+          line-height: 32px;
+          color: white;
+          font-size: 18px;
+          @media (max-width: 991px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  
+    .right {
+      height: 100vh;
+      max-width: 976px;
+      padding: 50px 100px 20px 100px;
+      @media (max-width: 991px) {
+        padding: 50px 40px 20px 40px;
+      }
+  
+      @media (max-width: 500px) {
+        padding: 50px 25px 20px 25px;
+      }
+  
+      h2 {
+        font-size: 35px;
+        color: #001c63;
+        font-weight: 600;
+        @media (max-width: 385px) {
+          font-size: 27px;
+        }
+      }
+  
+      p {
+        font-size: 16px;
+        color: #8992c7;
+        @media (max-width: 385px) {
+          font-size: 13px;
+        }
+      }
+  
+      .right-body {
+        .google {
+          width: 90%;
+          margin: 0 auto;
+          border: 1px solid rgba(128, 128, 128, 0.384);
+          border-radius: 5px;
+          padding: 10px;
+          cursor: pointer;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          transition: 0.1s ease-in-out;
+  
+          &:hover {
+            background-color: #8eb5d013;
+          }
+  
+          img {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+  
+          span {
+            font-size: 13px;
+            color: #3c4043;
+            font-weight: 500;
+          }
+        }
+  
+        .or {
+          height: 1px;
+          background-color: rgba(128, 128, 128, 0.162);
+          position: relative;
+  
+          margin: 30px;
+  
+          span {
+            position: absolute;
+            left: 50%;
+            top: -11px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            padding: 0 5px;
+            color: #8992c7;
+            background-color: white;
+          }
+        }
+  
+        form {
+          label {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            color: #001c63;
+            margin-bottom: 10px;
+            font-weight: 500;
+  
+            a {
+              font-size: 12px;
+              color: #abb2d9;
+            }
+          }
+  
+          input {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(128, 128, 128, 0.324);
+            font-size: 14px;
+  
+            &::placeholder {
+              font-size: 13px;
+              color: #8992c7d7;
+            }
+          }
+  
+          .pass {
+            position: relative;
+            margin-bottom: 15px;
+  
+            input {
+              margin: 0;
+            }
+  
+            span {
+              position: absolute;
+              right: 16px;
+              top: 50%;
+              transform: translateY(-50%);
+              .eye-icon {
+                display: none;
+                color: #d0d4ea;
+              }
+            }
+          }
+  
+          .check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            input {
+              width: 26px;
+              height: 26px;
+              margin: 0;
+            }
+            span {
+              font-size: 13px;
+              color: #001c63;
+            }
+          }
+          .btn-cont {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+            button {
+              background-color: #2240cd;
+              width: 104px;
+              height: 64px;
+              font-size: 19px;
+              font-weight: 500;
+              color: white;
+              border-radius: 8px;
+              border-color: transparent;
+            }
+          }
+        }
+        .signup-link {
+          h5 {
+            font-size: 15px;
+            text-align: center;
+            font-weight: 400;
+            a {
+              color: #001c63;
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .block {
+    display: block !important;
+  }
+  

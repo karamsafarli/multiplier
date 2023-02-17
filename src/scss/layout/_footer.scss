@@ -1,0 +1,226 @@
+footer {
+    .foot-top {
+      padding: 36px 0;
+      border-bottom: 1px solid #e9ecfa;
+  
+      .left {
+        .logo {
+          margin-left: 0;
+          margin-right: 60px;
+  
+          @media (max-width: 768px) {
+            margin-right: 20px;
+          }
+  
+          @media (max-width: 420px) {
+            margin-right: 10px;
+          }
+  
+          img {
+            width: 111px;
+            height: 25px;
+  
+            @media (max-width: 420px) {
+              width: calc(111px * 3 / 4);
+              height: calc(25px * 3 / 4);
+            }
+          }
+        }
+  
+        a {
+          font-size: 16px;
+          color: $font-color;
+          margin: 0 25px;
+  
+          @media (max-width: 768px) {
+            margin-left: 10px;
+            margin-right: 0;
+          }
+  
+          @media (max-width: 420px) {
+            font-size: 13px;
+          }
+        }
+      }
+  
+      .btn-cont {
+        display: flex;
+        justify-content: end;
+  
+        @media (max-width: 991px) {
+          justify-content: center;
+          margin-top: 15px;
+        }
+  
+        button {
+          width: 181px;
+          height: 55px;
+          font-size: 19px;
+          color: #2240cd;
+          font-weight: 600;
+          border: 1px solid rgba(34, 64, 205, 0.2);
+          background-color: transparent;
+          border-radius: $primary-borderrad;
+  
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+  
+          &:hover {
+            background-color: rgba(34, 64, 205, 0.1);
+          }
+        }
+      }
+    }
+  
+    .foot-body {
+      padding: 36px 0;
+  
+      .col-md-6 {
+        @media (max-width: 768px) {
+          padding-left: 30px !important;
+        }
+      }
+  
+      .contactus {
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+  
+      h3 {
+        font-size: 18px;
+        color: $main-fontc;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+  
+      .wcm {
+        margin-top: 35px;
+      }
+  
+      ul {
+        margin: 0;
+        padding: 0;
+  
+        li {
+          margin: 0;
+          margin-bottom: 12px;
+  
+          a {
+            font-size: 16px;
+            color: $font-color;
+          }
+        }
+      }
+  
+      .gh {
+        margin-bottom: 32px;
+      }
+  
+      h5 {
+        font-size: 16px;
+        color: $main-fontc;
+        margin-bottom: 15px;
+      }
+  
+      p {
+        font-size: 16px;
+        color: $main-fontc;
+      }
+  
+      .social-imgs {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 60px;
+  
+        img {
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+        }
+      }
+  
+      .social {
+        margin: 30px 0 10px 0;
+      }
+  
+      h6 {
+        font-size: 16px;
+        color: $main-fontc;
+        margin-bottom: 26px;
+      }
+  
+      .input-btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        input {
+          width: 65%;
+          padding: 8px 12px;
+          border: 1px solid #d0d4ea;
+          color: #8992c7;
+          font-size: 16px;
+          border-radius: 6px;
+  
+          &::placeholder {
+            color: #8992c7;
+            font-size: 13px;
+          }
+        }
+  
+        button {
+          width: 32%;
+          height: 40px;
+          font-size: 16px;
+          color: white;
+          font-weight: 600;
+          background-color: #2240cd;
+          border-radius: $primary-borderrad;
+          border-color: transparent;
+  
+          &:hover {
+            background-color: #13267a;
+          }
+        }
+      }
+    }
+  
+    .foot-bottom {
+      padding: 36px 60px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f2f4fd;
+      align-items: center;
+  
+      @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 36px 5px;
+      }
+  
+      h6 {
+        font-size: 14px;
+        color: $font-color;
+        margin: 0;
+      }
+  
+      a {
+        font-size: 16px;
+        color: $font-color;
+      }
+  
+      .terms {
+        margin-left: 24px;
+  
+        @media (max-width: 768px) {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  

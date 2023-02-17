@@ -1,0 +1,132 @@
+main {
+    #blog-head {
+      background-size: cover;
+      background-color: #00103b;
+      padding: 160px 25px;
+      .img-cont {
+        width: 100%;
+        border-radius: 18px;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+  
+      .right {
+        padding-left: 20px;
+        margin-top: 40px;
+        @media (max-width: 991px) {
+          padding-left: 0;
+        }
+        h6 {
+          font-size: 14px;
+          color: #abb2d9;
+          font-weight: 600;
+          margin-bottom: 20px;
+          span {
+            color: white;
+            font-weight: 400;
+          }
+          @media (max-width: 560px) {
+            font-size: 11px;
+          }
+        }
+  
+        h3 {
+          font-size: 46px;
+          color: white;
+          font-weight: 600;
+          margin: 8px 0 64px 0;
+          @media (max-width: 560px) {
+            font-size: 28px;
+            margin: 8px 0 32px 0;
+          }
+        }
+  
+        button {
+          background-color: #2240cd;
+          border-radius: 8px;
+          border-color: transparent;
+          box-shadow: 0 6px 10px 0 rgb(6 102 235 / 16%);
+          font-size: 18px;
+          color: white;
+          font-weight: 600;
+          width: 146px;
+          height: 54px;
+          &:hover {
+            background-color: #102486;
+          }
+        }
+      }
+    }
+  
+    #blogs {
+      background-color: #e9ecfa;
+      padding: 80px 30px;
+      .headings {
+        h3 {
+          @include Font($size: 34px, $color: $main-fontc, $weight: 600);
+          text-align: center;
+          @media (max-width: 991px) {
+            font-size: 28px;
+          }
+        }
+        p {
+          @include Font($size: 20px, $color: $font-color, $weight: 400);
+          text-align: center;
+          @media (max-width: 991px) {
+            font-size: 16px;
+          }
+        }
+      }
+      select {
+        width: 100%;
+        border-radius: 8px;
+        padding: 8px 12px;
+        border: none;
+        font-size: 17px;
+        color: #00103b;
+        font-weight: 600;
+        margin: 10px 0 45px 0;
+      }
+  
+      .blog-card {
+        cursor: pointer;
+        margin-bottom: 50px;
+        .img-cont {
+          border-radius: 12px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        h5 {
+          font-size: 14px;
+          color: #abb2d9;
+          font-weight: 600;
+          margin: 15px 0;
+          span {
+            font-weight: 400;
+          }
+        }
+        p {
+          font-size: 14px;
+          color: #01113b;
+          font-weight: 600;
+          line-height: 28px;
+        }
+        a {
+          font-size: 16px;
+          color: #2340cc;
+          i {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  
